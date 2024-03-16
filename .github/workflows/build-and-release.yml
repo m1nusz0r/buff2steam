@@ -82,7 +82,6 @@ jobs:
           dgst="${dgst//$'\n'/'%0A'}"
           dgst="${dgst//$'\r'/'%0D'}"
           echo "::set-output name=hash::$dgst"
-
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
